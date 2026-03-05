@@ -47,7 +47,7 @@ print("Total number of unique visits for " + year_month.rstrip("-") + ": " + str
 # 
 
 # Open the README for OpenSearch_CloudWatch_Alarms
-with open("..\\README.md") as README_file:
+with open("../README.md") as README_file:
 	README_lines = [line.rstrip() for line in README_file]
 README_file.close()
 
@@ -80,7 +80,7 @@ for line in README_lines:
 		else:
 			new_README_lines.append(line)
 
-new_README_file = open("..\\README.md", "w")
+new_README_file = open("../README.md", "w")
 
 for line in new_README_lines:
 	new_README_file.write(line + "\n")
@@ -88,6 +88,6 @@ for line in new_README_lines:
 new_README_file.close()
 
 # Push to GitHub
-os.system("git -C C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\GitHub_Insigths_History add .")
-os.system('git -C C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\GitHub_Insigths_History commit -m "Updating history"')
-os.system("git -C C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\GitHub_Insigths_History push")
+os.system("git -C /Users/csharkey/Documents/GitHub/GitHub_Insigths_History add .")
+os.system('git -C /Users/csharkey/Documents/GitHub/GitHub_Insigths_History commit -m "Updating history"')
+os.system("git -C /Users/csharkey/Documents/GitHub/GitHub_Insigths_History push")
