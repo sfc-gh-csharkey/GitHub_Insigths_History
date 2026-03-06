@@ -48,7 +48,7 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 	os.system("git -C " + repo_path + " pull")
 
 	# Open the README
-	with open(repo_path + "\\README.md") as README_file:
+	with open(repo_path + "/README.md") as README_file:
 		README_lines = [line.rstrip() for line in README_file]
 	README_file.close()
 
@@ -80,7 +80,7 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 			else:
 				new_README_lines.append(line)
 
-	new_README_file = open(repo_path + "\\README.md", "w")
+	new_README_file = open(repo_path + "/README.md", "w")
 
 	for line in new_README_lines:
 		new_README_file.write(line + "\n")
@@ -94,70 +94,10 @@ def update_readme_icon (repo_path, icon_type, number_to_update):
 
 #
 repos = [
-    "Glue_Hudi",
-    "Redshift_Helpful_Queries",
-    "Flink_Late_Arriving_Date_Event_Order",
-    "OpenSearch_Kafka_Anomaly_Detection",
-    "Kinesis_Data_Stream_Hot_Shard_Demo",
-    "Flink_Kinesis_Data_Analytics_Scala",
-    "Glue_Examples",
-    "Fluentd_Examples",
-    "OpenSearch_DynamoDB_Example",
-    "Managed_Streaming_for_Apache_Kafka_Examples",
-    "EMR_Studio_Stock_Price_Demo",
-    "EMR_Studio_Hudi",
-    "EMR_Studio_Deployment",
-    "EMR_Studio_Delta_Lake",
-    "EMR_Studio_Delta_Lake",
-    "EMR_Studio_Iceberg",
-    "Logstash_Example",
-    "OpenSearch_Log_Analytics",
-    "Outlook_MSG_Parser_Python",
-    "OpenSearch_DeletedDocuments",
-    "Comprehend_Real-time_Analysis_Example",
-    "Boto3_Authentication_Options",
-    "OpenSearch_Audit_Logs",
-    "Redshift_Data_Sharing_Demo",
-    "OpenSearch_API_Examples",
-    "SecurityLake_AmazonSecurityLakeMetaStoreManager",
-    "Iceberg_EMR_Athena",
-    "Glue_Spark_History_Server",
-    "OpenSearch_User_Role_Premission_Managment",
-    "OpenSearch_Sigv4_IAM_Auth",
-    "MongoDB_Streams_Glue_Iceberg",
-    "BM25_Search_Example",
-    "OpenSearch_Neural_Search",
-    "Bedrock_Examples",
-    "Cosine_Similarity_Search_Example",
-    "OpenSearch_Vector_Search_w_Fine-tuned_BERT_on_SageMaker",
-    "OpenSearch_kNN_Vector_Search",
-    "DataZone_Demo",
-    "OpenSearch_Index_Shard_Size",
-    "Glue_Aggregate_Small_Files",
-    "OpenSearch_Read_Only_Index",
-    "OpenSearch_Refresh_Interval",
-    "OpenSearch_Local_Dashboard_Server",
-    "OpenSearch_Resource_Flow_Chart",
-    "OpenSearch_Dashboard_Nginx_Proxy",
-    "OpenSearch_CloudWatch_Alarms",
-    "Neo4j_Infrastructure",
-    "DataZone_Demo_FSI",
-    "Iceberg_Glue_from_JARs",
-    "Iceberg_Glue_register_table",
-    "Iceberg_update_metadata_script",
-    "Opentelemetry_Tracing_Python",
-    "FastAPI_Pydantic_Examples",
-    "Iceberg_EMR_rewrite_table_path",
-    "GotMilk_TwelveLabs",
-    "Snowflake_Iceberg_GDC",
-    "Snowflake_Iceberg_Horizon",
-    "Snowflake_Iceberg_Polaris",
-    "PyIceberg_Glue_Data_Catalog",
-    "DuckDB_Glue_Data_Catalog",
-    "MSR-VTT_Build",
-	"MCP_Basics",
-	"MCP_AgentCore",
-	"Bedrock_Knowledge_Base_Redshift"
+    "Sample_Data_Financial_Services",
+	"Cortex_Search_FSI_Examples",
+	"Cortex_Analyst_FSI_Examples",
+	"Cortex_Agent_FSI_Examples"	
 ]
 
 for repo in repos:
@@ -177,5 +117,5 @@ for repo in repos:
 	elif len(unique_visits) == 2:
 		unique_visits = "0" + str(unique_visits)
 
-	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "views", views)
-	update_readme_icon("C:\\Users\\ev290\\OneDrive\\Desktop\\GitHub\\" + repo, "unique-visits", unique_visits)
+	update_readme_icon("/Users/csharkey/Documents/GitHub/" + repo, "views", views)
+	update_readme_icon("/Users/csharkey/Documents/GitHub/" + repo, "unique-visits", unique_visits)
