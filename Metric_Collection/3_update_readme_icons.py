@@ -97,7 +97,10 @@ repos = [
     "Sample_Data_Financial_Services",
 	"Cortex_Search_FSI_Examples",
 	"Cortex_Analyst_FSI_Examples",
-	"Cortex_Agent_FSI_Examples"	
+	"Cortex_Agent_FSI_Examples",
+	"Snowflake_ML_Trade_Anomaly_Detection",
+	"Usage_History_Examples",
+	"AI_COMPLETE_w_FineTunned_LLM"	
 ]
 
 for repo in repos:
