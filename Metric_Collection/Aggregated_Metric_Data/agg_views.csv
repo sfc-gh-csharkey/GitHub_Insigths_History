@@ -1,6 +1,10 @@
 Repository_Name,Total
-Cortex_Search_FSI_Examples,58
-Sample_Data_Financial_Services,55
-Cortex_Analyst_FSI_Examples,53
-Cortex_Agent_FSI_Examples,0
+Sample_Data_Financial_Services,113
+Cortex_Search_FSI_Examples,70
+Cortex_Analyst_FSI_Examples,63
+Usage_History_Examples,53
+Snowflake_ML_Trade_Anomaly_Detection,11
+ArcticTraining_LLM_Fine-tuning,2
+Cortex_Agent_FSI_Examples,1
+AI_COMPLETE_w_FineTunned_LLM,1
 GitHub_Insigths_History,0
