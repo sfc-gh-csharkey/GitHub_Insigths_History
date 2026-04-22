@@ -100,7 +100,8 @@ repos = [
 	"Cortex_Agent_FSI_Examples",
 	"Snowflake_ML_Trade_Anomaly_Detection",
 	"Usage_History_Examples",
-	"AI_COMPLETE_w_FineTunned_LLM"	
+	"AI_COMPLETE_w_FineTunned_LLM",
+	"Cortex_Agent_Evaluation"	
 ]
 
 for repo in repos:
